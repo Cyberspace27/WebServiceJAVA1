@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://webservices.d/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservices.d/">
+
+<xs:element name="CelsisuAFahrenheit" type="tns:CelsisuAFahrenheit" />
+
+<xs:element name="CelsisuAFahrenheitResponse" type="tns:CelsisuAFahrenheitResponse" />
+
+<xs:element name="FahrenheitAcelsius" type="tns:FahrenheitAcelsius" />
+
+<xs:element name="FahrenheitAcelsiusResponse" type="tns:FahrenheitAcelsiusResponse" />
+
+<xs:complexType name="CelsisuAFahrenheit">
+<xs:sequence>
+<xs:element name="celsius" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CelsisuAFahrenheitResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="FahrenheitAcelsius">
+<xs:sequence>
+<xs:element name="fahrenheit" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="FahrenheitAcelsiusResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
